@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <style>
+            
+            body {background-color:rgb(250,250,250); color: black; font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;}
+
+            .content-box {display:flex; justify-content:center; flex-wrap: wrap; height:850px;}
+
+            #instagram-on-phone {width:383px; height:583px; margin:15px; position:relative; top:98px;}
+
+            #login-window {width:350px; height:400px; margin:15px; text-align:center; background: white; border: 1px solid rgb(219,219,219); position:relative; top:110px;}
+
+            #input-bar1 { width: 236px; height: 24px; border: 1px solid rgb(219,219,219); 
+                padding: 5px 15px 5px 15px; margin: 0px 0px 6px 0px; font-size: 12px; outline: none; background-color: rgb(250,250,250);}
+            #input-bar1:focus { border-color:rgb(168,168,168);}
+
+            #input-bar2 { width: 236px; height: 24px; border: 1px solid rgb(219,219,219); 
+                padding: 5px 15px 5px 15px; margin: 0px 0px 14px 0px; font-size: 12px; outline: none; background-color: rgb(250,250,250);}
+            #input-bar2:focus { border-color:rgb(168,168,168);}
+            
+            #blue-button {
+                background-color: rgb(0,149,246);
+                color: white;
+                width: 268px;
+                height: 32px;
+                border-radius: 9px;
+                font-weight: bold;
+                font-size:13px;
+                cursor: pointer;
+                border: none;
+            }
+            #blue-button:hover{ background-color:rgb(24,119,242);}
+
+            .divider {display: flex; justify-content: center; align-items: center; color: rgb(150, 150, 150); font-size:12px; font-weight:bold; padding:4px 0px 15px 0px;}
+
+            .divider .line {height: 1px; width: 100px; background-color: rgb(219,219,219); margin:0px 20px 0px 20px;}
+
+            #fbl-button {
+                background-color: transparent;
+                color: rgb(56,81,133);
+                width: 200px;
+                height: 20px;
+                font-size:13px;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+            }
+
+            #fbl-logo-pic {margin-right: 8px;}
+
+            #forgot-password-div{padding-top: 20px;}
+            #forgot-password{font-size:11px; text-decoration: none; color: rgb(56,81,133)}
+
+            #reg-window {width:350px; height:62px; text-align:center; background: white; border: 1px solid rgb(219,219,219); margin-top:30px; font-size:13px;}
+            #reg-window p {margin-top: 24px;}
+            #reg-window a {color: rgb(0,149,246); text-decoration: none; font-weight: bold;}
+
+            #ustpril {font-size:13px; margin-top:20px; margin-bottom:20px;}
+            #ustpril-images {width:350px; display:flex; justify-content: center;}
+            #ustpril-images button {background-color: transparent; border: none; cursor: pointer;}
+
+            .footer {width: 100%; height: 50px;}
+
+            .footer .options {margin-left: 150px;margin-right: 150px;text-align: center;line-height: 20px;}
+
+            .footer .founder {text-align: center;margin-top: 24px;margin-left: 80px;margin-right: 80px;font-size: 12px;color: #8a8d91;}
+
+            .footer a {text-decoration: none;font-size: 12px;color: #8a8d91;margin-right: 10px;}
+
+            .footer a:hover {text-decoration: underline;}
+
+        </style>
+    </head>
+    <body>   
+    <div class="content-box">
+
+        <img src="instagram-image.png" alt="instagram on phone" id="instagram-on-phone">  
+
+        <div id="login-window">
+
+            <img src="instagram-logo.png" alt="instagram logo">
+
+            <input type="text" id="input-bar1" name="email" placeholder="Телефон, имя пользователя или эл. адрес">
+
+            <input type="password" id="input-bar2" name="email" placeholder="Пароль">
+
+            <a href="#"><button id="blue-button">Войти</button></a>
+
+            <div class="divider">
+                <div class="line"></div>
+                <p>ИЛИ</p>
+                <div class="line"></div>
+            </div>
+
+            <a href="WD-facebook.html"><button id="fbl-button"><img id="fbl-logo-pic" src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="16">Войти через Facebook</button></a>
+            
+            <div id="forgot-password-div"><a href="#" id="forgot-password">Забыли пароль?</a></div>
+
+            <div id="reg-window">
+                <p>У вас еще нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+            </div>
+
+            <p id="ustpril">Установите приложение.</p>
+            
+            <div id="ustpril-images">
+                <a href="#"><button><img src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png" width="130"></button></a>
+                <a href="#"><button><img src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png" width="110"></button></a>
+            </div>
+
+        </div>
+
+    </div>        
+
+    <div class="footer">
+        <div class="options">
+            <a href="#">Meta</a>
+            <a href="#">Информация</a>
+            <a href="#">Блог</a>
+            <a href="#">Вакансии</a>
+            <a href="#">Помощь</a>
+            <a href="#">API</a>
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия</a>
+            <a href="#">Популярные аккаунты</a>
+            <a href="#">Места</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+        </div>
+        <div class="founder">© 2023 Instagram by Almas</div>
+    </div>
+
+    </body>
+</html>
