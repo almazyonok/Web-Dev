@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: rgb(240, 242, 245);
+                
+            }
+
+            h2 {margin: 1px; font-size: 28px; font-weight: 1;}
+            
+            .content-box1{
+                display:flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                height:712px;
+            }
+
+            #info-text{
+                
+                width: 480px;
+                height: 200px;
+                position: relative;
+                float:left;
+                padding:20px;
+                margin:5px 80px 5px -37px;
+                position: relative;
+                top:170px;
+            }
+            
+            #login-window{
+                
+                width:400px;
+                height: 350px;
+                position: relative;
+                float:right;
+                top: 120px;
+                background: white;
+                border-radius: 10px;
+
+                display:flex;
+                justify-content:center;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            }
+
+            #facebook-logo{margin:-28px; padding-bottom: 15px; width:300px}
+
+            #input-bar1 { width: 338px; height: 40px; border: 1px solid rgb(222,222,222); 
+                padding: 5px 15px 5px 15px; margin: 16px 0px 16px 0px;
+                border-radius: 7px; font-size: 16px; outline: none;}
+            
+            #input-bar1:focus{border-color:rgb(27,116,228);}
+
+            #input-bar2 { width: 338px; height: 40px; border: 1px solid rgb(222,222,222); 
+                padding: 5px 15px 5px 15px; margin-bottom:16px;
+                border-radius: 7px; font-size: 16px; outline: none;}
+            
+            #input-bar2:focus{border-color:rgb(27,116,228);}
+
+            #blue-button{
+                background-color: rgb(24,119,242);
+                color: white;
+                width: 368px;
+                height: 52px;
+                border-radius: 7px;
+                font-weight: bold;
+                font-size:20px;
+                cursor: pointer;
+                border: none;
+                
+            }
+            #blue-button:hover{
+                background-color:rgb(22,111,229);
+            }
+
+            #green-button{
+                background-color: rgb(66,183,42);
+                color: white;
+                width: 230px;
+                height: 48px;
+                border-radius: 7px;
+                
+                font-weight: bold;
+                font-size:17px;
+                cursor: pointer;
+                border: none;
+                
+            }
+            #green-button:hover{
+                background-color:rgb(54,164,32);
+            }
+            
+            #forgot-password{margin: 16px 140px 16px 140px; font-size:14px; text-decoration: none; color: rgb(24,119,242)}
+
+            #forgot-password:hover { text-decoration: underline;}
+
+            #line-between-fp-na{background-color: rgb(218,221,225); width: 368px; height: 1px; margin-bottom: 24px;}
+
+            .bpanel { background-color: white; min-height:233px; margin-left:-15px;}
+
+            .bpanel .lang { margin:0px 468px 0 468px; padding-top: 28px;}
+
+            .bpanel .lang a { font-size: 12px; text-decoration: none; color: rgb(125,125,125); margin-right: 8px;}
+
+            .bpanel .lang a:hover { text-decoration: underline;}
+
+            #line-between-lang-act{background-color: rgb(218,221,225); height: 1px; margin:10px 468px 0 468px; }
+
+            .bpanel .act { margin:0px 520px 0 468px; padding-top: 9px;}
+
+            .bpanel .act a { font-size: 12px; text-decoration: none; color: rgb(140,140,140); margin-right: 14px;}
+
+            .bpanel .act a:hover { text-decoration: underline;}
+
+            .famous-reg { margin-top: 57px; font-size: 14px; text-align: center;}
+
+            .famous-reg a { color: rgb(30,30,30); text-decoration: none; font-weight: bold;}
+            
+            .famous-reg a:hover { text-decoration: underline;}
+
+            .copyright { font-size: 11px; color: rgb(100, 100, 100); margin: 24px 468px 0px 468px; }
+
+        </style>
+    </head>
+    <body>   
+        <div class="content-box1">
+            <div id="info-text">
+    
+                <img id="facebook-logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+                <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+
+            </div>      
+
+            <div id="login-window">
+            
+                <input type="text" id="input-bar1" name="email" placeholder="Электронный адрес или номер телефона">
+
+                <input type="password" id="input-bar2" name="password" placeholder="Пароль">
+
+                <a href="https://www.google.com/"><button id="blue-button">Вход</button></a>
+
+                <a id="forgot-password" href="#">Забыли пароль?</a>
+
+                <div id="line-between-fp-na"></div>
+
+                <a href="https://www.google.com/"><button id="green-button">Создать новый аккаунт</button></a>
+
+                <div class="famous-reg"> <a href="#">Создать Страницу</a> знаменитости, музыкальной группы или компании. </div>
+
+            </div>
+        </div>
+        <div class="bpanel">
+
+            <div class="lang">
+                <a href="#">Русский</a>
+                <a href="#">English (US)</a>
+                <a href="#">Türkçe</a>
+                <a href="#">Bahasa Indonesia</a>
+                <a href="#">中文(简体)</a>
+                <a href="#">Қазақша</a>
+                <a href="#">Deutsch</a>
+                <a href="#">한국어</a>
+                <a href="#">Shqip</a>
+                <a href="#">Español</a>
+                <a href="#">Português (Brasil)</a>
+            </div>
+
+            <div id="line-between-lang-act"></div>
+
+            <div class="act">
+                <a href="#">Регистрация</a>
+                <a href="#">Вход</a>
+                <a href="#">Messenger</a>
+                <a href="#">Facebook Lite</a>
+                <a href="#">Watch</a>
+                <a href="#">Места</a>
+                <a href="#">Игры</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Meta Pay</a>
+                <a href="#">Oculus</a>
+                <a href="#">Portal</a>
+                <a href="#">Instagram</a>
+                <a href="#">Bulletin</a>
+                <a href="#">Благотворительные акции</a>
+                <a href="#">Услуги</a>
+                <a href="#">Центр информации о выборах</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Центр конфиденциальности</a>
+                <a href="#">Группы</a>
+                <a href="#">Информация</a>
+                <a href="#">Создать рекламу</a>
+                <a href="#">Создать Страницу</a>
+                <a href="#">Разработчикам</a>
+                <a href="#">Вакансии</a>
+                <a href="#">Файлы cookie</a>
+                <a href="#">Рекламные предпочтения</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Справка</a>
+                <a href="#">Загрузка контактов и лица, не являющиеся пользователями</a>
+            </div>
+            <p class="copyright">Almas © 2023</p>
+        </div>
+
+        
+    </body>
+</html>
