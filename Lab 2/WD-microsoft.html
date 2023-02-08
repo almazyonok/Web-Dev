@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Microsoft</title>
+        <style>
+            
+            body {background-color:rgb(255, 255, 255); color: black; font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;}
+
+            .content-box {display:flex; flex-direction: column; height:1400px;}
+
+            #top-panel {width:92%; height:43px; z-index: 2; padding-top: 5px; padding-left:8%; display: flex;}
+
+            #ms-logo {width: 108px; height: 23px; margin-right: 30px; margin-top:4px;}
+
+            #top-panel a {color: #262626; font-size: 13px; margin-right: 25px; text-decoration: none; margin-top:10px; height: 15px;}
+            
+            #top-panel a:hover {border-bottom: 2px solid #262626; margin-bottom: -5px; padding-bottom: 3px;}
+
+            #top-panel-empty{width:44%; height: 30px; margin-right: 0px;}
+
+            #main-panel {margin:auto;}
+
+            #main-panel-img { width: 101%; z-index: 1; margin-left:-11px;}
+
+            #main-panel-txt {position: absolute; top:23%; left:10%; width:30%; color: White;}
+
+            #main-panel-txt h1 { font-size: 36px;}
+
+            #main-panel-txt p {line-height: 1.5;}
+
+            #blue-button {
+                background-color: rgb(0,103,184);
+                color:white;
+                width: 240px;
+                height: 40px;
+                border-radius: 2px;
+                font-weight:bold;
+                font-size:15px;
+                cursor: pointer;
+                border: none;
+                margin-top: 10px; }
+
+            #blue-button:hover{ background-color:rgb(0,92,165);}
+
+            #bottom-panel {display: flex; justify-content:center;}
+
+            #bottom-panel a { text-decoration: none;}
+
+            .bottom-panel-el {width:382px; height:500px; margin: 90px 12px 12px 12px; }
+            
+            .bottom-panel-el img {width:382px; height:216px;}
+
+            .bottom-panel-el h1 { font-size: 28px; color:black;}
+
+            .bottom-panel-el p {line-height: 1.5; color:black;}
+
+        </style>
+    </head>
+    <body>   
+        <div class="content-box">
+    
+            <div id="top-panel">
+                <img id="ms-logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="microsoft logo">
+                <a href="#">Microsoft 365</a>
+                <a href="#">Office</a>
+                <a href="#">Windows</a>
+                <a href="#">Поддержка</a>
+                <div id="top-panel-empty"></div>
+                <a href="#">Продукты Майкрософт ↓ </a>
+                <a href="#">Поиск<img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" 
+                    style = "width: 15px; -webkit-transform: scaleX(-1); transform: scaleX(-1); margin: -3px 6px;"></a>
+                <a href="#">Войти</a>
+                <img src="microsoft-avatar.png" style="width:32px; height:32px">
+            </div>
+
+            <div>
+                <img id="main-panel-img" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600" alt="main panel">
+            </div>
+            <div id="main-panel-txt">
+                <h1>Разработано для жизни — сегодня и в будущем</h1>
+                <p>Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+                <a href="#"><button id="blue-button">Проверьте, готов ли ваш ПК</button></a>
+            </div>
+
+            <div id="bottom-panel">
+                <a href="#">
+                    <div class="bottom-panel-el">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-M365-Icon-Bounce-Word-Merch?wid=380&hei=213&fit=crop">
+                        <h1>Microsoft 365</h1>
+                        <p>Приложения и функции, которые помогут вам воплотить идеи в реальность, оставаться в безопасности и сосредоточиться на важных вещах в жизни.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bottom-panel-el">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=297&hei=167&fit=crop">
+                        <h1>Microsoft Edge</h1>
+                        <p>Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bottom-panel-el">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=297&hei=167&fit=crop">
+                        <h1>Microsoft OneDrive</h1>
+                        <p>Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="bottom-panel-el">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=297&hei=167&fit=crop">
+                        <h1>OneNote</h1>
+                        <p>Приведите свои заметки и дела в порядок.</p>
+                    </div>
+                </a>    
+                
+            </div>
+
+        </div>
+    </body>
+</html>
