@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+  <script>
+
+    let i = 3;
+    while (i) {
+    alert( i-- );
+    } // last will be 1
+
+    let j = 0;
+    while (++j < 5) alert( i ); // 0 1 2 3 4
+
+    let k = 0;
+    while (k++ < 5) alert( i ); // 0 1 2 3 4 5
+
+    for (let i2 = 2; i2 <= 10; i2++) {
+    if (i2 % 2 == 0) {
+        alert( i2 );
+    }
+    }
+
+    let i3 = 0;
+    while (i3 < 3) {
+    alert( `number ${i3}!` );
+    i3++;
+    }
+
+    let num;
+    do {
+    num = prompt("Enter a number greater than 100?", 0);
+    } while (num <= 100 && num);
+
+  </script>
+</body>
+
+</html>
