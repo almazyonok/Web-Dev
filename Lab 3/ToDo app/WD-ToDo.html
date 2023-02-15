@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo app</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: #8af1ff;
+        }
+
+        hr {border: 1px solid rgb(55, 131, 202);}
+
+        .task {
+            margin: 16px;
+        }
+
+        .task button {
+            border-radius: 6px;
+            border: none;
+            background-color: #ce5233;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            margin-left: 15px;
+            cursor:pointer;
+        }
+
+        #box {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #tasks {
+            margin: 30px;
+            position: absolute;
+            left: 60%;
+            top: 15%
+        }
+
+        #todo-creator {
+            margin: 40px;
+            position: absolute;
+            left: 25%;
+            top: 15%;
+            width:400x;
+            height:100px;
+        }
+
+        #todo-creator input {
+            font-size: 16px;
+            width: 300px;
+            height: 40px;
+            border-radius: 6px;
+            border: 2px solid rgb(55, 131, 202);
+        }
+
+        #todo-creator button {
+            border: none;
+            height: 40px;
+            width: 40px;
+            border-radius: 6px;
+            background-color: rgb(55, 131, 202);
+            color: #fff;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+
+        #header {
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(55, 131, 202);
+        }
+
+        input[type="checkbox"] {
+            height:30px;
+            width:30px;
+            cursor:pointer;
+            position:relative;
+            top: 11px;
+            left: 15px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header"><h1>ToDo list</h1></div>
+    <div id="box">
+        <div id="todo-creator">
+            <input id="text-field" type="text" placeholder="New task">
+
+
+            <button id="add">
+                <script>
+                    document.querySelector('#add').onclick = function() {
+                        if(document.querySelector('#text-field').value.length != 0){
+                            document.querySelector('#tasks').innerHTML += `
+                            <div class="task">
+
+                                ${document.querySelector('#text-field').value}
+                                <input type="checkbox">
+                                <button class="delete"> <strong>X</strong> </button>
+                                <hr>
+                            </div>
+                            `;
+            
+                            var current_tasks = document.querySelectorAll(".delete");
+                            for(var i=0; i<current_tasks.length; i++){
+                                current_tasks[i].onclick = function(){
+                                    this.parentNode.remove();
+                                }
+                            }
+                        }
+                    }
+                </script>
+                +
+            </button>
+
+
+        </div>
+        <div id="tasks"></div>
+    </div>
+    
+</body>
+</html>
