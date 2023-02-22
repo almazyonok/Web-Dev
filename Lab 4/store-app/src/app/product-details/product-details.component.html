@@ -1,0 +1,15 @@
+<h1>Product Details</h1>
+
+<div *ngIf="product">
+  <div>
+    <a href="{{ product.productURLkaspi }}" target="_blank">This phone on Kapsi.kz</a>
+  </div>
+  <h1>{{ product.name }}</h1>
+  <img src="{{ product.imgURL }}" height="400">
+  <h4>{{ product.price }} ₸</h4>
+  <h5>Rating: {{ product.productRating }} / 5</h5>
+  <p>{{ product.description }}</p>
+
+
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

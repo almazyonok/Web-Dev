@@ -1,0 +1,36 @@
+<h1> Phones </h1>
+
+<div *ngFor="let product of products">
+
+  <h3 class="product-name">
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+  <div class="panel-with-product-content">
+  <img class="product-image" src="{{ product.imgURL}}" width="100">
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }} , Rating: {{ product.productRating}} / 5
+  </p>
+  </div>
+
+
+  <div class="panel-with-buttons">
+  
+    <app-product-alerts
+    [product]="product" 
+    (notify)="onNotify()">
+    </app-product-alerts>
+    
+    <button type="button" (click)="share(product)">
+    Share
+    </button>
+  
+  </div>
+
+  <hr>
+
+</div>
