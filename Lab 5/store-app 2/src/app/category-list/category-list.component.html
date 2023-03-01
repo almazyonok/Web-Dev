@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="category-sidebar">
+    <h2>Categories</h2>
+    <div *ngFor="let category of categories">
+      <div class="category-tile">
+        <h3>
+          {{ category.type }}
+        </h3>
+        <input type="checkbox" [checked]="category.selected" (change)="update(category)"></div>
+    </div>
+  </div>
+  <div>
+    <h2>Products</h2>
+
+    <div *ngFor="let product of products">
+
+      <h3>
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products', product.id]">
+          {{ product.name }}
+        </a>
+      </h3>
+
+      <img src="{{product.image}}">
+
+      <h4>Rating: {{ product.rating }}</h4>
+
+      <p *ngIf="product.description" style="width: 500px;">
+        Description: {{ product.description }}
+      </p>
+
+      <button type="button" (click)="share(product)">
+        Share
+      </button>
+
+      <a href="{{ product.href }}" style="margin: 50px;">Открыть в Kaspi.kz</a>
+
+      <button type="button" (click)="like(product)">{{product.likes}} Like</button>
+
+      <app-product-alerts
+        [product]="product"
+        (notify)="onNotify()">
+      </app-product-alerts>
+
+    </div>
+  </div>
+</div>

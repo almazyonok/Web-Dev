@@ -1,0 +1,25 @@
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  input {
+    margin: 0 0 0 10px;
+  }
+  
+  .category-tile {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .category-sidebar {
+    margin-right: 100px;
+  }
+  
+  img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+  }
