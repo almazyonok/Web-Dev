@@ -1,0 +1,13 @@
+<button routerLink="..">Return back</button>
+
+<p>album #{{album.id}} details</p>
+
+<h1> {{album.title}} </h1>
+
+<div>
+    <input type="text" [(ngModel)]="newAlbum.title">
+    <button (click)="updateAlbum()">Update title</button>
+</div>
+
+<a routerLink="/albums/{{album.id}}/photos">Photos</a>
+
