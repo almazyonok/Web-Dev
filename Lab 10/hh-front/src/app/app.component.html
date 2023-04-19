@@ -1,0 +1,33 @@
+<fieldset>
+  <label>Company</label>
+  <input type="text" [(ngModel)]="company_name">
+  <input type="text" [(ngModel)]="company_description">
+  <input type="text" [(ngModel)]="company_city">
+  <input type="text" [(ngModel)]="company_address">
+  <button (click)="addCompany()">Add</button>
+  <br>
+  <label>Vacancy</label>
+  <input type="text" [(ngModel)]="vacancy_name">
+  <input type="text" [(ngModel)]="vacancy_description">
+  <input type="number" [(ngModel)]="vacancy_salary">
+  <input type="number" [(ngModel)]="vacancy_company">
+  <button (click)="addVacancy()">Add</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let company of companies" (click)="show(company.id)">
+    Id: {{company.id}} --- Name: {{company.name}} --- Description: {{company.description}} ---
+    City: {{company.city}} --- Address: {{company.address}};
+    <button (click)="deleteCompany(company.id)">X</button>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let vacancy of vacancies">
+    Id: {{vacancy.id}} --- Name: {{vacancy.name}} --- Description: {{vacancy.description}} ---
+    Salary: {{vacancy.salary}} --- Company: {{vacancy.company}};
+    <button (click)="deleteVacancy(vacancy.id)">X</button>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
